@@ -1,20 +1,35 @@
 body {
     margin: 0;
     height: 100vh;
-    background-color: rgb(219, 243, 220);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
+    animation: gradientBackground 2s ease infinite; /* Aplica la animación de fondo */
+}
+
+@keyframes gradientBackground {
+    0% {
+        background: linear-gradient(45deg, #000000, #ffffff);
+    }
+    50% {
+        background: linear-gradient(45deg, #ffffff, #000000);
+    }
+    100% {
+        background: linear-gradient(45deg, #000000, #ffffff);
+    }
 }
 
 .container {
     text-align: center;
     color: white;
+    position: relative;
+    z-index: 2;
 }
 
 img {
     max-width: 80%;
     height: auto;
+    opacity: 0.8;
 }
