@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(219, 243, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
