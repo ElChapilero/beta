@@ -18,5 +18,13 @@
     ";
     
     // Create connection
-    $conn = pg_connect($data_connections)
+    $conn = pg_connect($data_connections);
+    
+    if (!$conn) {
+        die("connection failed: ". pg_last_error());
+    } else {
+        echo "connection succesfully";
+    }
+    // Check connection
+    pg_close($conn);
 ?>
