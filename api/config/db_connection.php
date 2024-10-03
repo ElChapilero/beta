@@ -23,8 +23,9 @@
     if (!$conn) {
         die("connection failed: ". pg_last_error());
     } else {
-        echo "connection succesfully";
+        //echo "connection succesfully";
     }
     // Check connection
-    pg_close($conn);
+    
+    //pg_close($conn);
 ?>
